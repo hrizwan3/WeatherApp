@@ -1,0 +1,91 @@
+/* Hourly.css */
+.hourly {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .weather-icon {
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .current-temp {
+    font-size: 48px;
+    color: black;
+  }
+  
+  .hourly-forecast {
+    width: 100%;
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .hourly-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  .time {
+    flex: 1.2;
+    color: black;
+  }
+  
+  .icon {
+    flex: 0 0 40px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .temp {
+    flex: 1.2;
+    text-align: right;
+  }
+  
+  .temp span {
+    display: block;
+    font-size: 16px;
+  }
+
+  .current-weather i {
+    color: #f39c12;
+  }
+  
+  .hourly-item i {
+    color: #3498db;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .weather-icon {
+      font-size: 70px;
+    }
+  
+    .current-temp {
+      font-size: 36px;
+    }
+  
+    .hourly-item {
+      font-size: 16px;
+    }
+  
+    .icon {
+      font-size: 20px;
+    }
+  
+    .temp span {
+      font-size: 14px;
+    }
+  }
+  

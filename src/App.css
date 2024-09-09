@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A7C7E7;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.device-frame {
+  width: 375px;
+  height: 667px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #A7C7E7;
+  border-radius: 8px;
+}
+
+.navbar button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.navbar button.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.navbar button:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.hourly-item,
+.weekly-item,
+.temp,
+.current-temp,
+.day,
+.time {
+  color: black;
+}
+
+.weekly-container, .hourly-container {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .navbar button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
